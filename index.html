@@ -1,0 +1,173 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Всё о сёрфинге</title>
+  <meta name="description" content="Сайт про всё для любителей сёрфинга">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="keywords" content="спорт, сёрфинг, соревнования, спортсмены">
+
+  <meta name="author" content="Iaroslav Vedernikov">
+  <link rel="apple-touch-icon" href="favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/outline.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<header>
+  <h1>Всё о сёрфинге</h1>
+  <div class="search">
+    <input id="search" type="text" placeholder="Найдётся всё">
+    <label for="search"></label>
+    <button>Найти</button>
+  </div>
+</header>
+<main>
+  <section class="side-bar">
+    <nav>
+      <ol>
+        <li><a href="#articles">Заметки о соревнованиях</a></li>
+        <li><a href="#ascii">ASCII</a></li>
+        <li><a href="#code">Кусочек кода</a></li>
+        <li><a href="#quote">Цитата</a></li>
+        <li><a href="#formula"> Формула успеха </a></li>
+        <li><a href="#plans">Планы на будущее</a></li>
+        <li><a href="#contacts">Мои контакты</a></li>
+      </ol>
+    </nav>
+  </section>
+  <section id="articles" class="articles">
+    <div class="articles-container">
+      <div class="article">
+        <div class="article-content">
+          <div class="article-photo-content">
+            <img class="article-photo" src="img/img1.png" alt="Здесь должно быть фото">
+            <div class="description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam inventore iure maiores nobis placeat
+                quas rem ut. Aspernatur aut culpa delectus explicabo, modi neque nisi nulla, quae quibusdam ullam
+                voluptate!</p>
+            </div>
+          </div>
+          <h2 class="article-name"><b>Заметка о сёрфинге</b></h2>
+          <div class="article-info">
+            <div class="date">
+              <span>Дата: </span>
+              <strong><span>11.06.24</span></strong>
+            </div>
+            <div class="location">
+              <span>Место проведения: </span>
+              <strong><span>Какое-то место</span></strong>
+            </div>
+            <div class="views">
+              <span>Просмотры: </span>
+              <strong><span>500000</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="article-comments">
+          <h3>Комментарии:</h3>
+          <div class="comment">
+            <h4 class="user-name">Пользователь 1</h4>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque eaque, maxime minus non
+              perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis voluptas
+              voluptate. Reprehenderit.</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="ascii">
+    <h2>Оцените нереальный рисунок псевдографикой</h2>
+    <pre>
+      |
+      |,
+      |',
+      |  ;
+      |   ,
+      |   ',
+######|     ;##$$**&&<<;;,---....,,,____
+      |    ,,,           ""=;,          ''''----....,,,,
+      |   `''',             ";%.,
+      |_  _i l ;              **;;.,
+      | V    |  ,  _.-=        ##$$**&&;;.,
+      |\_/7 || / /'_,.-=        *###$$$%%%;;..,,,
+      |   |__|/,.-'_,..-=         *##$$$%%%;;;;;.....,,,,,
+     /|  /#%'',.-'                  **##$$$;;;;;;.......,,,,,,,,,
+    / | | A /,                          ****#######$$$$$;;;;;;;.....,,,,
+   / ' `| | /                                ***********::::::::::........
+  /   =.  .'
+ /     _,'
+ L,,.-'
+    </pre>
+  </section>
+  <section id="code">
+    <h2>Какой-то код</h2>
+    <pre>
+      <code>
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode curr = head;
+        ListNode prev = null;
+        ListNode next = null;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        return prev;
+    }
+}
+      </code>
+    </pre>
+  </section>
+  <section id="quote">
+    <h2>Цитата</h2>
+    <blockquote>
+      <p>Если ты хочешь чего-то запредельного, ты должен заплатить за это запредельную цену.
+        Нет никакой беды в том, что ты умрёшь, делая то, что любишь.</p>
+      <cite>Патрик Суэйзи</cite>
+    </blockquote>
+  </section>
+  <section id="formula">
+    <h2>Формула успеха</h2>
+    <pre>
+      X + Y = <sub>Y</sub>спе<sup>X</sup>
+    </pre>
+    <p>любовь к делу (х) и вера в себя (у)</p>
+  </section>
+  <section id="plans">
+    <ul>
+      <li>
+        <del>Создать сайт</del>
+      </li>
+      <li>
+        <del>Сдать лабу</del>
+      </li>
+      <li>
+        <ins>Закрыть веб</ins>
+      </li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <p>Здесь расположены мои контакты</p>
+  <ul id="contacts">
+    <li>
+      <a href=#>Github</a></li>
+    <li>
+      <a href=#>Telegram</a>
+    </li>
+  </ul>
+</footer>
+</body>
+
+</html>
