@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="ru" xmlns="http://www.w3.org/1999/html">
+<html class="no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -15,160 +15,463 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/outline.css">
-
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.cdnfonts.com/css/damn" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 <header>
-  <h1>Всё о сёрфинге</h1>
-  <div class="search">
-    <input id="search" type="text" placeholder="Найдётся всё">
-    <label for="search"></label>
-    <button>Найти</button>
-  </div>
-</header>
-<main>
-  <aside>
-  <section class="navigation-bar">
-    <nav>
-      <ol>
-        <li><a href="#articles">Заметки о соревнованиях</a></li>
-        <li><a href="#ascii">ASCII</a></li>
-        <li><a href="#code">Кусочек кода</a></li>
-        <li><a href="#quote">Цитата</a></li>
-        <li><a href="#formula"> Формула успеха </a></li>
-        <li><a href="#plans">Планы на будущее</a></li>
-        <li><a href="#contacts">Мои контакты</a></li>
-      </ol>
-    </nav>
-  </section>
-  </aside>
-  <section id="articles" class="articles">
-    <div class="articles-container">
-      <div class="article">
-        <div class="article-content">
-          <div class="article-photo-content">
-            <img class="article-photo" src="img/img1.png" alt="Здесь должно быть фото">
-            <div class="description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam inventore iure maiores nobis placeat
-                quas rem ut. Aspernatur aut culpa delectus explicabo, modi neque nisi nulla, quae quibusdam ullam
-                voluptate!</p>
-            </div>
-          </div>
-          <h2 class="article-name"><b>Заметка о сёрфинге</b></h2>
-          <div class="article-info">
-            <div class="date">
-              <span>Дата: </span>
-              <strong><span>11.06.24</span></strong>
-            </div>
-            <div class="location">
-              <span>Место проведения: </span>
-              <strong><span>Какое-то место</span></strong>
-            </div>
-            <div class="views">
-              <span>Просмотры: </span>
-              <strong><span>500000</span></strong>
-            </div>
-          </div>
-        </div>
-        <div class="article-comments">
-          <h3>Комментарии:</h3>
-          <div class="comment">
-            <h4 class="user-name">Пользователь 1</h4>
-            <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque eaque, maxime minus non
-              perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis voluptas
-              voluptate. Reprehenderit.</i></p>
-          </div>
-        </div>
+  <section class="navbar">
+    <div class="dropdown">
+      <h1 class="navbar__header header-text">Всё о сёрфинге</h1>
+      <div class="navbar__content">
+        <a class="navbar__element default-text" href="#">Соревнования</a>
+        <a class="navbar__element default-text" href="#">Спортсмены</a>
+        <a class="navbar__element default-text" href="#">О Сайте</a>
       </div>
     </div>
   </section>
-  <section id="ascii">
-    <h2>Оцените нереальный рисунок псевдографикой</h2>
-    <pre>
-      |
-      |,
-      |',
-      |  ;
-      |   ,
-      |   ',
-######|     ;##$$**&&<<;;,---....,,,____
-      |    ,,,           ""=;,          ''''----....,,,,
-      |   `''',             ";%.,
-      |_  _i l ;              **;;.,
-      | V    |  ,  _.-=        ##$$**&&;;.,
-      |\_/7 || / /'_,.-=        *###$$$%%%;;..,,,
-      |   |__|/,.-'_,..-=         *##$$$%%%;;;;;.....,,,,,
-     /|  /#%'',.-'                  **##$$$;;;;;;.......,,,,,,,,,
-    / | | A /,                          ****#######$$$$$;;;;;;;.....,,,,
-   / ' `| | /                                ***********::::::::::........
-  /   =.  .'
- /     _,'
- L,,.-'
-    </pre>
+  <section class="search">
+    <input class="search__input default-text" id="search" type="text" placeholder="Найдётся всё">
+    <button class="search__button default-text">Найти</button>
   </section>
-  <section id="code">
-    <h2>Какой-то код</h2>
-    <pre>
-      <code>
-class Solution {
-    public ListNode reverseList(ListNode head) {
-        ListNode curr = head;
-        ListNode prev = null;
-        ListNode next = null;
-        while (curr != null) {
-            next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-        }
+</header>
+<main>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="content">
+    <section id="articles" class="articles">
+      <div class="articles-container">
+        <div class="article article_border">
+          <div class="article__content">
+            <div class="article-photo-content">
+              <img class="article__photo" src="img/img1.png" alt="Здесь должно быть фото">
+              <div class="article__description">
+                <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam inventore iure
+                  maiores nobis placeat
+                  quas rem ut. Aspernatur aut culpa delectus explicabo, modi neque nisi nulla, quae quibusdam ullam
+                  voluptate!</p>
+              </div>
+            </div>
+            <h2 class="article__name default-text"><b>"Заметка о сёрфинге"</b></h2>
+            <div class="event-info">
+              <div class="event-info__date default-text">
+                Дата:
+                <span>11.06.24</span>
+              </div>
+              <div class="event-info__location default-text">
+                Место проведения:
+                <span>Какое-то место</span>
+              </div>
+              <div class="event-info__views default-text">
+                Просмотры:
+                <span>500000</span>
+              </div>
+            </div>
+          </div>
+          <div class="article__comments">
+            <h3 class="default-text">Комментарии:</h3>
+            <div class="comments-content">
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article article_border">
+          <div class="article__content">
+            <div class="article-photo-content">
+              <img class="article__photo" src="img/img1.png" alt="Здесь должно быть фото">
+              <div class="article__description">
+                <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam inventore iure
+                  maiores nobis placeat
+                  quas rem ut. Aspernatur aut culpa delectus explicabo, modi neque nisi nulla, quae quibusdam ullam
+                  voluptate!</p>
+              </div>
+            </div>
+            <h2 class="article__name default-text"><b>"Заметка о сёрфинге"</b></h2>
+            <div class="event-info">
+              <div class="event-info__date default-text">
+                Дата:
+                <span>11.06.24</span>
+              </div>
+              <div class="event-info__location default-text">
+                Место проведения:
+                <span>Какое-то место</span>
+              </div>
+              <div class="event-info__views default-text">
+                Просмотры:
+                <span>500000</span>
+              </div>
+            </div>
+          </div>
+          <div class="article__comments">
+            <h3 class="default-text">Комментарии:</h3>
+            <div class="comments-content">
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article article_border">
+          <div class="article__content">
+            <div class="article-photo-content">
+              <img class="article__photo" src="img/img1.png" alt="Здесь должно быть фото">
+              <div class="article__description">
+                <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam inventore iure
+                  maiores nobis placeat
+                  quas rem ut. Aspernatur aut culpa delectus explicabo, modi neque nisi nulla, quae quibusdam ullam
+                  voluptate!</p>
+              </div>
+            </div>
+            <h2 class="article__name default-text"><b>"Заметка о сёрфинге"</b></h2>
+            <div class="event-info">
+              <div class="event-info__date default-text">
+                Дата:
+                <span>11.06.24</span>
+              </div>
+              <div class="event-info__location default-text">
+                Место проведения:
+                <span>Какое-то место</span>
+              </div>
+              <div class="event-info__views default-text">
+                Просмотры:
+                <span>500000</span>
+              </div>
+            </div>
+          </div>
+          <div class="article__comments">
+            <h3 class="default-text">Комментарии:</h3>
+            <div class="comments-content">
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article article_border">
+          <div class="article__content">
+            <div class="article-photo-content">
+              <img class="article__photo" src="img/img1.png" alt="Здесь должно быть фото">
+              <div class="article__description">
+                <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam inventore iure
+                  maiores nobis placeat
+                  quas rem ut. Aspernatur aut culpa delectus explicabo, modi neque nisi nulla, quae quibusdam ullam
+                  voluptate!</p>
+              </div>
+            </div>
+            <h2 class="article__name default-text"><b>"Заметка о сёрфинге"</b></h2>
+            <div class="event-info">
+              <div class="event-info__date default-text">
+                Дата:
+                <span>11.06.24</span>
+              </div>
+              <div class="event-info__location default-text">
+                Место проведения:
+                <span>Какое-то место</span>
+              </div>
+              <div class="event-info__views default-text">
+                Просмотры:
+                <span>500000</span>
+              </div>
+            </div>
+          </div>
+          <div class="article__comments">
+            <h3 class="default-text">Комментарии:</h3>
+            <div class="comments-content">
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="user">
+                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
+                  <h4 class="user__name default-text">Пользователь 1</h4>
+                </div>
+                <div class="comment__wrapper">
+                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
+                    eaque,
+                    maxime minus non
+                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
+                    voluptas
+                    voluptate. Reprehenderit.</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        return prev;
-    }
-}
-      </code>
-    </pre>
-  </section>
-  <section id="quote">
-    <h2>Цитата</h2>
-    <blockquote>
-      <p>Если ты хочешь чего-то запредельного, ты должен заплатить за это запредельную цену.
-        Нет никакой беды в том, что ты умрёшь, делая то, что любишь.</p>
-      <cite>Патрик Суэйзи</cite>
-    </blockquote>
-  </section>
-  <section id="formula">
-    <h2>Формула успеха</h2>
-    <pre>
-      X + Y = <sub>Y</sub>спе<sup>X</sup>
-    </pre>
-    <p>любовь к делу (х) и вера в себя (у)</p>
-  </section>
-  <section id="plans">
-    <ul>
+      </div>
+    </section>
+  </div>
+</main>
+<footer>
+  <section class="contacts">
+    <p class="default-text">Здесь расположены мои контакты</p>
+    <ul id="contacts">
       <li>
-        <del>Создать сайт</del>
-      </li>
+        <a class="contact default-text" href=#>Github</a></li>
       <li>
-        <del>Сдать лабу</del>
-      </li>
-      <li>
-        <ins>Закрыть веб</ins>
+        <a class="contact default-text" href=#>Telegram</a>
       </li>
     </ul>
   </section>
-</main>
-<footer>
-  <p>Здесь расположены мои контакты</p>
-  <ul id="contacts">
-    <li>
-      <a href=#>Github</a></li>
-    <li>
-      <a href=#>Telegram</a>
-    </li>
-  </ul>
 </footer>
 </body>
 
