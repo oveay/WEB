@@ -11,8 +11,8 @@
 
   <meta name="author" content="Iaroslav Vedernikov">
   <link rel="apple-touch-icon" href="favicon.ico">
-  <!-- Place favicon.ico in the root directory -->
-
+  <script src="js/main.js"></script>
+  <script src="js/loaddata.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -24,11 +24,11 @@
 <header>
   <section class="navbar">
     <div class="dropdown">
-      <h1 class="navbar__header header-text">Всё о сёрфинге</h1>
+      <a class="active navbar__header header-text" href="index.html">Всё о сёрфинге</a>
       <div class="navbar__content">
-        <a class="navbar__element default-text" href="#">Соревнования</a>
-        <a class="navbar__element default-text" href="#">Спортсмены</a>
-        <a class="navbar__element default-text" href="#">О Сайте</a>
+        <a class="navbar__element default-text" href="index.html">Лента</a>
+        <a class="navbar__element default-text" href="create-article.html">Мои заметки</a>
+        <a class="navbar__element default-text" href="info.html">О Сайте</a>
       </div>
     </div>
   </section>
@@ -74,76 +74,6 @@
           <div class="article__comments">
             <h3 class="default-text">Комментарии:</h3>
             <div class="comments-content">
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -177,76 +107,6 @@
           <div class="article__comments">
             <h3 class="default-text">Комментарии:</h3>
             <div class="comments-content">
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -280,76 +140,6 @@
           <div class="article__comments">
             <h3 class="default-text">Комментарии:</h3>
             <div class="comments-content">
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -383,80 +173,9 @@
           <div class="article__comments">
             <h3 class="default-text">Комментарии:</h3>
             <div class="comments-content">
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="user">
-                  <img src="img/profile_icon.png" alt="?" class="user__avatar">
-                  <h4 class="user__name default-text">Пользователь 1</h4>
-                </div>
-                <div class="comment__wrapper">
-                  <p class="comment__text comment__text_border default-text"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque
-                    eaque,
-                    maxime minus non
-                    perspiciatis quod tempore unde velit veniam. Labore obcaecati perferendis possimus quasi qui quis
-                    voluptas
-                    voluptate. Reprehenderit.</i></p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   </div>
@@ -472,6 +191,7 @@
       </li>
     </ul>
   </section>
+  <p class="default-text" id="loadTime"></p>
 </footer>
 </body>
 

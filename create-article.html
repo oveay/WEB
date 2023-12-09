@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Всё о сёрфинге</title>
+  <meta name="description" content="Сайт про всё для любителей сёрфинга">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="keywords" content="спорт, сёрфинг, соревнования, спортсмены">
+
+  <meta name="author" content="Iaroslav Vedernikov">
+  <link rel="apple-touch-icon" href="favicon.ico">
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.cdnfonts.com/css/damn" rel="stylesheet">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<header>
+  <section class="navbar">
+    <div class="dropdown">
+      <a class="active navbar__header header-text" href="index.html">Всё о сёрфинге</a>
+      <div class="navbar__content">
+        <a class="navbar__element default-text" href="index.html">Лента</a>
+        <a class="navbar__element default-text" href="create-article.html">Мои заметки</a>
+        <a class="navbar__element default-text" href="info.html">О Сайте</a>
+      </div>
+    </div>
+  </section>
+  <section class="search">
+    <input class="search__input default-text" id="search" type="text" placeholder="Найдётся всё">
+    <button class="search__button default-text">Найти</button>
+  </section>
+</header>
+<main>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="content">
+    <section class="form article_border">
+      <form class="create-form" id="create-form">
+        <div class="create-form__row">
+          <div class="create-form__column">
+            <label for="input-name" class="default-text">Введите название</label>
+            <input type="text" id="input-name" required>
+            <label for="input-date" class="default-text">Введите дату проведения</label>
+            <input type="text" id="input-date" required>
+            <label for="input-location" class="default-text">Введите место проведения</label>
+            <input type="text" id="input-location" required>
+          </div>
+          <div class="create-form__column">
+            <label for="input-photo" class="default-text">Добавьте картинку</label>
+            <input class="default-text" type="file" id="input-photo" required>
+            <label for="input-text" class="default-text">Введите текст заметки</label>
+            <textarea name="message" type="text" id="input-text" required></textarea>
+          </div>
+        </div>
+        <div class="create-form__row">
+          <input class="active default-text" type="submit" value="Создать заметку" id="input-submit">
+        </div>
+      </form>
+    </section>
+    <section id="articles" class="articles">
+      <div class="articles-container">
+      </div>
+    </section>
+  </div>
+</main>
+<footer>
+  <section class="contacts">
+    <p class="default-text">Здесь расположены мои контакты</p>
+    <ul id="contacts">
+      <li>
+        <a class="contact default-text" href=#>Github</a></li>
+      <li>
+        <a class="contact default-text" href=#>Telegram</a>
+      </li>
+    </ul>
+  </section>
+  <p class="default-text" id="loadTime"></p>
+</footer>
+</body>
+
+</html>
